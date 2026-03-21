@@ -1,0 +1,49 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.prog5121part1;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Student
+ */
+public class PROG5121Part1{
+
+    
+    public static boolean checkUsername(String Username){
+  
+        if (Username.length()<5&&Username.contains("_")){
+          System.out.println("Username successfully captured");}
+        else{System.out.println("Username is not correctly formatted");}{
+        return true;
+    }
+        
+        
+    public static boolean checkPasswordCompexity(String Password,
+            int char whole  number="1",
+                    String char letter="A"
+                    String char special="@"        ){
+        
+        if (Password.length()<8&&Password.isDigit(whole number));{
+          System.out.println("You have success");}  
+        else{System.out.println("Incorrect");}
+          {
+        return true;
+    }
+    public static boolean checkCellPhoneNumber(String CellphoneNumber){
+         if (CellphoneNumber.length()<11){
+          System.out.println("You have success");}  
+        else{System.out.println("Incorrect");}
+         {
+        return true;
+    }
+ public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in); }
+}
+    }
+}
+     
+
