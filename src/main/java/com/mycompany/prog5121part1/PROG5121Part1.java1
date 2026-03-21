@@ -17,7 +17,7 @@ public class PROG5121Part1{
   
         if (Username.length()<5&&Username.contains("_")){
           System.out.println("Username successfully captured");}
-        else{System.out.println("Username is not correctly formatted");}{
+        else{System.o7ut.println("Username is not correctly formatted");}{
         return true;
     }
         
