@@ -12,7 +12,7 @@ package com.mycompany.prog5121part1;
 public class PROG5121Part1{
 
       public static void main(String[] args) {
-        System.out.println("Hello World!");
+        System.out.println("Testing");
     }
       
       
