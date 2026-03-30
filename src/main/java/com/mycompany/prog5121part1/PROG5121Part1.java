@@ -69,7 +69,7 @@ public class PROG5121Part1{
             System.out.println("Cell phone number incorrectly formatted or does not contain international code");
             return false; 
         }
-    }//end of checkCellphoneNumber
+    }//end of checkCellphoneNumber blessed
 }
         
         
