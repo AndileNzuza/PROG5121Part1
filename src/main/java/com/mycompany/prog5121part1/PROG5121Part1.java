@@ -12,15 +12,18 @@ package com.mycompany.prog5121part1;
 public class PROG5121Part1{
 
       public static void main(String[] args) {
-        String username = "And_l";
+        String username ;
         boolean valid = checkUsername(username);
         System.out.println(valid);
-        String password = "ppppkppp";
+        String password;
         valid = checkPasswordCompexity(password);
         System.out.println(valid);
-        String cellphoneNumber = "ZA"+276990909;
+        String cellphoneNumber;
         valid = checkCellphoneNumber(cellphoneNumber);
-        System.out.println(valid);        
+        System.out.println(valid);
+        String registration;
+        valid = checkRegistration(registration);
+        System.out.println(valid);
     }
       
     //check if username is valid 
@@ -69,7 +72,14 @@ public class PROG5121Part1{
             System.out.println("Cell phone number incorrectly formatted or does not contain international code");
             return false; 
         }
-    }//end of checkCellphoneNumber blessed
+    }//end of checkCellphoneNumber 
+    
+    //check if registration is valid
+    public static boolean checkRegistration(String registration)
+    {
+        
+        if(username.length()<=5&&username.contains("_")&&password.length()<=8&&password.matches(".*[^A-Za-z0-9 ].*")&&password.matches(".*\\d.*")&&password.matches(".*[A-Z].*"))
+    }
 }
         
         
