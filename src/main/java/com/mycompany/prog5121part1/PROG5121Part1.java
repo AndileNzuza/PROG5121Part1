@@ -14,25 +14,26 @@ import java.util.Scanner;
 public class PROG5121Part1{
 
       public static void main(String[] args) {
-        String username ;
-        boolean valid = checkUsername(username);
-        System.out.println(valid);
-        String password;
-        valid = checkPasswordCompexity(password);
-        System.out.println(valid);
-        String cellphoneNumber;
-        valid = checkCellphoneNumber(cellphoneNumber);
-        System.out.println(valid);
-        String registration;
-        valid = checkRegistration(registration);
-        System.out.println(valid);
-    }
       
       Scanner sc = new Scanner(System.in);
     //Ask for username  
       System.out.println("Enter your username");
       String username = sc.nextLine();
-    //check if username is valid 
+    //Ask for password
+      System.out.println("Enter your password");
+      String password = sc.nextLine();
+    //Ask for cellphone number
+      System.out.println("Enter your cellphone number");
+      String cellphoneNumber = sc.nextLine();
+    //Confirm regitration
+      System.out.println("Regitration successful");
+      String registration = sc.nextLine();
+    //Confirm login
+      System.out.println("Login successful");
+      String login = sc.nextLine();
+      
+      
+    //check if username is valid
     public static boolean checkUsername(String username)
     {
   
@@ -83,9 +84,17 @@ public class PROG5121Part1{
     //check if registration is valid
     public static boolean checkRegistration(String registration)
     {
-        
-        if(username.length()<=5&&username.contains("_")&&password.length()<=8&&password.matches(".*[^A-Za-z0-9 ].*")&&password.matches(".*\\d.*")&&password.matches(".*[A-Z].*"))
-    }
+      return true;  
+    
+    }//end of registration
+    
+    //check if login is valid
+     public static boolean checkLogin(String login)
+    {
+      return true;  
+    
+    }//end of login
+
 }
         
         
