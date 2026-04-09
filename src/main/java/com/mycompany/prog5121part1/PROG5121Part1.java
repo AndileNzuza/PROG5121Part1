@@ -39,9 +39,9 @@ public class PROG5121Part1 {
         String loginPass = sc.nextLine();
 
         if (loginUser(username, password, loginUser, loginPass)) {
-            System.out.println("Login successful");
+            System.out.println("Welcome <user first name>, <user last name> it is great to see you again.");
         } else {
-            System.out.println("Login failed");
+            System.out.println("Username or password incorrect please try again.");
         }
     }
 
@@ -52,7 +52,7 @@ public class PROG5121Part1 {
             System.out.println("Username successfully captured");
             return true;
         } else {
-            System.out.println("Username is not correctly formatted.");
+            System.out.println("Username is not correctly formatted; please ensure that your username cointains an underscore and is no more than five characters in length.");
             return false;
         }
     }
@@ -69,7 +69,7 @@ public class PROG5121Part1 {
             return true;
 
         } else {
-            System.out.println("Password is not correctly formatted.");
+            System.out.println("Password is not correctly formatted;please ensure that the password cointains at least eight characters, a capital letter, a numer, and a special character.");
             return false;
         }
     }
@@ -82,7 +82,7 @@ public class PROG5121Part1 {
             return true;
 
         } else {
-            System.out.println("Cellphone number incorrectly formatted.");
+            System.out.println("Cellphone number incorrectly formatted or does not cointain international code.");
             return false;
         }
     }
