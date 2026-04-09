@@ -4,6 +4,8 @@
 
 package com.mycompany.prog5121part1;
 
+import java.util.Scanner;
+
 
 /**
  *
@@ -26,6 +28,10 @@ public class PROG5121Part1{
         System.out.println(valid);
     }
       
+      Scanner sc = new Scanner(System.in);
+    //Ask for username  
+      System.out.println("Enter your username");
+      String username = sc.nextLine();
     //check if username is valid 
     public static boolean checkUsername(String username)
     {
